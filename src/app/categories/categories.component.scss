@@ -1,0 +1,53 @@
+@import "../../styles.scss";
+
+.categories{
+    background-color: $mainColor4;
+    .categoriesInner{
+        background-color: $mainColor5;
+        border-radius: 15px;
+    }
+    .pagesPath{
+        background-color: $mainColor5;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+}
+.page-item.active{
+    .page-link{
+        background-color: $mainColor2;
+        border-color: $mainColor1;
+        color: $mainColor3;
+
+    }
+}
+.page-item{
+    .page-link{
+    color: $mainColor2;
+}}
+
+.categoryItem{
+    position: relative;
+    border: 2px solid $mainColor4;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 1s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.2,1.2);
+        .categoryItemDescription{
+            top: 60%;
+
+        }
+    }
+    .categoryItemDescription{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        transition: all 1s;
+        text-align: center;
+        padding: 50px;
+        background-color:rgba($color: $mainColor4, $alpha: .5);
+    }
+}

@@ -1,0 +1,22 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.rtl.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css";
+body{
+direction: rtl;    
+}
+$mainColor1:#618531;
+$mainColor2:#9bc114;
+$mainColor3:#fff;
+$mainColor4: #aaa;
+$mainColor5: #eee;
+
+.websiteButtonStyling{
+    background-color: $mainColor1;
+    color: $mainColor3;
+    font-size: 12px;
+    font-weight: bold;
+}
+.slick-next::before,.slick-prev::before{
+    color: $mainColor1 !important;
+    opacity: 1 !important;
+}

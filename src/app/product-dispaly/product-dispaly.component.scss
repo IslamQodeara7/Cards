@@ -1,0 +1,104 @@
+@import "../../styles.scss";
+
+.productDisplay {
+    background-color: $mainColor5;
+
+    .productDisplayInner {
+        background-color: transparent;
+        border-radius: 15px;
+    }
+
+    .pagesPath {
+        background-color: $mainColor4;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+
+.productDescription,.productAddComment,.productAddedComment {
+    box-shadow: 1px 2px 3px $mainColor4;
+    background-color: $mainColor3;
+    padding: 0px;
+    border-radius: 15px 15px 0px 0px;
+    .inner {
+        .header {
+            border-radius: 15px 15px 0px 0px;
+            
+            background-color: $mainColor4;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+
+}
+
+.productImage{
+
+    .inner{
+        box-shadow: 1px 2px 3px $mainColor4;
+        border-radius: 15px 15px 0px 0px;
+        background-color: $mainColor3;
+    }
+    img{
+        border-radius: 15px 15px 0px 0px;
+    }
+}
+
+
+.socialIcons {
+    .icon {
+        width: 35px;
+        height: 35px;
+        border: 2px solid $mainColor3;
+        box-shadow: 1px 2px 3px $mainColor4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        .hiddenIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $mainColor4;
+            color: $mainColor3;
+            position: absolute;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+        }
+
+        .visibleIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $mainColor1;
+            color: $mainColor3;
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+        }
+
+        &:hover {
+            .hiddenIcon {
+                top: 0%;
+
+            }
+
+            .visibleIcon {
+                top: 100%;
+            }
+        }
+
+
+    }
+
+}

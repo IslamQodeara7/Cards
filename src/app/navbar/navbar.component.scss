@@ -1,0 +1,125 @@
+@import "../../styles.scss";
+
+.firstNav {
+    border-bottom: 1px solid $mainColor4;
+    font-size: 12px;
+    font-weight: bold;
+
+    a {
+
+        &:hover {
+            color: $mainColor1;
+
+        }
+    }
+}
+
+.searchPart {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border: 2px solid $mainColor4;
+
+    input {
+        box-shadow: none;
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+            border: none;
+
+        }
+    }
+
+    .searchIcon {
+        height: inherit;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $mainColor1;
+        cursor: pointer;
+
+        i {
+            color: $mainColor3;
+        }
+    }
+
+
+}
+
+.userLinks {
+    background-color: $mainColor4;
+    padding: 5px 10px;
+    color: $mainColor3;
+
+}
+
+.userPart {
+    position: relative;
+}
+
+.userProfilePic {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: 10px solid $mainColor4;
+
+
+}
+
+
+.thirdNav {
+    background-color: $mainColor4;
+    font-size: 12px;
+    font-weight: bold;
+
+    .subscriptionButton {
+        color: $mainColor3;
+    }
+
+    a,
+    span,
+    button {
+        text-decoration: none;
+        font-weight: bold;
+        color: $mainColor1;
+
+        &:hover {
+            color: $mainColor2;
+            cursor: pointer;
+        }
+
+    }
+
+
+
+}
+
+.moreLinks {
+    position: relative;
+
+    >ul {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 200px;
+        display: none;
+    }
+
+
+    &:hover {
+        ul{
+            display: initial;
+        }
+    }
+}
+
+.moreLinks2{
+    position: relative;
+
+}

@@ -1,0 +1,102 @@
+@import "../../styles.scss";
+.footer {
+    background-color: $mainColor4;
+
+    .footer1 {
+        color: $mainColor3;
+    }
+
+    .footer2 {
+        background-color: $mainColor3;
+    }
+}
+
+.searchPart {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border: 2px solid $mainColor4;
+
+    input {
+        box-shadow: none;
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+            border: none;
+
+        }
+    }
+
+    .searchIcon {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+        background-color: $mainColor1;
+        width: 30%;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+}
+
+
+.socialIcons {
+    .icon {
+        width: 35px;
+        height: 35px;
+        border: 2px solid $mainColor3;
+        box-shadow: 1px 2px 3px $mainColor4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        .hiddenIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $mainColor4;
+            color: $mainColor3;
+            position: absolute;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+        }
+
+        .visibleIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $mainColor1;
+            color: $mainColor3;
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+        }
+
+        &:hover {
+            .hiddenIcon {
+                top: 0%;
+
+            }
+
+            .visibleIcon {
+                top: 100%;
+            }
+        }
+
+
+    }
+
+}
